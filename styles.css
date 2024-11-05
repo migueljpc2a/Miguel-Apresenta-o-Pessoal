@@ -1,34 +1,100 @@
+/* Paleta: https://colorkit.co/color-palette-generator/c4e587-15190f-414c2d-6d7f4b-98b269 */
 :root {
-    --a-decoration-color: #414c2d;
-    --tecnologia-decoration-color: #c4e587;
-    --li-background-color: #15190f;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  a {
-    color: black;
-    text-decoration-color: var(--a-decoration-color);
-  }
-  
-  p {
-    line-height: 1.4;
-    text-wrap: wrap;
-    max-width: 680px;
-  }
-  
+  --a-decoration-color: #414c2d;
+  --tecnologia-decoration-color: #c4e587;
+  --li-background-color: #15190f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration-color: var(--a-decoration-color);
+}
+
+p {
+  line-height: 1.4;
+  text-wrap: wrap;
+  max-width: 680px;
+}
+
+header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+header > nav > a {
+  margin: 0 16px;
+}
+
+.border-left {
+  border-left: 2px solid var(--a-decoration-color);
+  padding-left: 8px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+#icons > img {
+  user-select: none;
+}
+
+#contato > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  gap: 24px;
+  justify-content: center;
+}
+
+#contato > ul > li > a {
+  border: 1px solid var(--li-background-color);
+  border-radius: 6px;
+  background-color: var(--li-background-color);
+  color: white;
+  text-decoration: none;
+
+  padding: 6px 12px;
+}
+
+#contato > ul > li > a:hover {
+  border-color: var(--a-decoration-color);
+  background-color: var(--a-decoration-color);
+}
+
+@media (max-width: 768px) {
   header {
-    width: 80%;
+    flex-direction: column;
+  }
+
+  header > h1 {
+    font-size: 20px;
+  }
+
+  header > nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+
+  main {
     padding: 8px 16px;
   }
-  
- 
-  
+
+  p {
+    max-width: 480px;
+  }
+}
