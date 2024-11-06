@@ -1,3 +1,4 @@
+/* Paleta: https://colorkit.co/color-palette-generator/c4e587-15190f-414c2d-6d7f4b-98b269 */
 :root {
   --a-decoration-color: #414c2d;
   --tecnologia-decoration-color: #c4e587;
@@ -30,27 +31,70 @@ header {
   padding: 8px 16px;
 }
 
+header > nav > a {
+  margin: 0 16px;
+}
+
 .border-left {
   border-left: 2px solid var(--a-decoration-color);
   padding-left: 8px;
 }
 
-header {
-  flex-direction: column;
-}
-
-header>h1 {
-  font-size: 20px;
-}
-
-header>nav {
+#icons {
   display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0;
 }
 
-main {
-  padding: 8px 16px;
+#icons > img {
+  user-select: none;
 }
 
-p {
-  max-width: 480px;
+#contato > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  gap: 24px;
+  justify-content: center;
+}
+
+#contato > ul > li > a {
+  border: 1px solid var(--li-background-color);
+  border-radius: 6px;
+  background-color: var(--li-background-color);
+  color: white;
+  text-decoration: none;
+
+  padding: 6px 12px;
+}
+
+#contato > ul > li > a:hover {
+  border-color: var(--a-decoration-color);
+  background-color: var(--a-decoration-color);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header > h1 {
+    font-size: 20px;
+  }
+
+  header > nav {
+    display: flex;
+  }
+
+  main {
+    padding: 8px 16px;
+  }
+
+  p {
+    max-width: 480px;
+  }
 }
