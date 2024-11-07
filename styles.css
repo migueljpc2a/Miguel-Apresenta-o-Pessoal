@@ -30,10 +30,6 @@ header {
   padding: 8px 16px;
 }
 
-header > nav > a {
-  margin: 0 16px;
-}
-
 .border-left {
   border-left: 2px solid var(--a-decoration-color);
   padding-left: 8px;
