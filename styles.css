@@ -39,19 +39,6 @@ header > nav > a {
   padding-left: 8px;
 }
 
-#icons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  padding: 8px 0;
-}
-
-#icons > img {
-  user-select: none;
-}
-
-@media (max-width: 768px) {
   header {
     flex-direction: column;
   }
