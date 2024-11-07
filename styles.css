@@ -37,7 +37,7 @@ header {
 
 
 
-@media (max-width: 768px) {
+
   header {
     flex-direction: column;
   }
@@ -57,7 +57,7 @@ header {
   p {
     max-width: 480px;
   }
-}
+
 
 .categoria-videos {
   display: flex;
