@@ -47,11 +47,6 @@ header > nav > a {
   padding: 8px 0;
 }
 
-#icons > img {
-  user-select: none;
-}
-
-
   header {
     flex-direction: column;
   }
