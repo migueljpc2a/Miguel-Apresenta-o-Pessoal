@@ -92,16 +92,16 @@ header {
 }
 
 footer {
-  background-color: #f8f8f8; /* Cor de fundo suave */
+  background-color: #f8f8f8;
   color: #333;
   padding: 15px;
   font-family: Arial, sans-serif;
   text-align: center;
-  border-top: 2px solid #ddd; /* Borda superior sutil */
+  border-top: 2px solid #ddd;
   font-size: 16px;
 }
 
 footer p {
   margin: 0;
-  color: #555;
+  color: white;
 }
