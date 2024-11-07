@@ -30,10 +30,6 @@ header {
   padding: 8px 16px;
 }
 
-header > nav > a {
-  margin: 0 16px;
-}
-
 .border-left {
   border-left: 2px solid var(--a-decoration-color);
   padding-left: 8px;
@@ -41,11 +37,17 @@ header > nav > a {
 
 #icons {
   display: flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   padding: 8px 0;
 }
 
+#icons > img {
+  user-select: none;
+}
+
+@media (max-width: 768px) {
   header {
     flex-direction: column;
   }
@@ -91,4 +93,19 @@ header > nav > a {
 
 .categoria h2 {
   color: rgb(42, 122, 228);
+}
+
+footer {
+  background-color: #f8f8f8; /* Cor de fundo suave */
+  color: #333;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-top: 2px solid #ddd; /* Borda superior sutil */
+  font-size: 16px;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
 }
