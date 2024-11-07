@@ -47,7 +47,7 @@ header {
   user-select: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100px) {
   header {
     flex-direction: column;
   }
