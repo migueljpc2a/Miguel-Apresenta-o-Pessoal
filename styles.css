@@ -11,8 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  overflow-x: hidden;
 }
 
 a {
@@ -34,22 +33,37 @@ header {
   padding: 8px 16px;
 }
 
+header > nav > a {
+  margin: 0 16px;
+}
+
 .border-left {
   border-left: 2px solid var(--a-decoration-color);
   padding-left: 8px;
 }
 
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+#icons > img {
+  user-select: none;
+}
 
 @media (max-width: 768px) {
   header {
     flex-direction: column;
   }
 
-  header>h1 {
+  header > h1 {
     font-size: 20px;
   }
 
-  header>nav {
+  header > nav {
     display: flex;
   }
 
