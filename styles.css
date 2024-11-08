@@ -5,12 +5,14 @@
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 a {
@@ -84,13 +86,4 @@ header {
 
 .categoria h2 {
   color: rgb(42, 122, 228);
-}
-
-.sobremim {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  max-width: 100%;  /* Impede que o conteúdo ultrapasse a tela */
-  box-sizing: border-box;  /* Inclui padding e borda no cálculo da largura */
-  padding: 0 20px;  /* Adiciona um pouco de padding para não encostar nas bordas */
 }
