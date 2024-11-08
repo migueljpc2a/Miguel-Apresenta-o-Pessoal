@@ -43,11 +43,11 @@ header {
     flex-direction: column;
   }
 
-  header > h1 {
+  header>h1 {
     font-size: 20px;
   }
 
-  header > nav {
+  header>nav {
     display: flex;
   }
 
