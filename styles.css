@@ -12,6 +12,7 @@ body {
   margin: 0;
   flex-wrap: nowrap;
   flex-direction: column;
+  overflow: hidden;
 }
 
 a {
