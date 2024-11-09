@@ -6,10 +6,9 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   flex-wrap: nowrap;
   flex-direction: column;
   overflow: hidden;
@@ -34,7 +33,7 @@ header {
   padding: 8px 16px;
 }
 
-header > nav > a {
+header>nav>a {
   margin: 0 16px;
 }
 
@@ -51,7 +50,7 @@ header > nav > a {
   padding: 8px 0;
 }
 
-#icons > img {
+#icons>img {
   user-select: none;
 }
 
@@ -60,11 +59,11 @@ header > nav > a {
     flex-direction: column;
   }
 
-  header > h1 {
+  header>h1 {
     font-size: 20px;
   }
 
-  header > nav {
+  header>nav {
     display: flex;
   }
 
